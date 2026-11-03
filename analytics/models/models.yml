@@ -6,6 +6,8 @@ models:
           description: 'Unique identifier for the job posting'
         - name: job_title
           description: 'Title of the job posting'
+          data_tests:
+            - not_null
         - name: job_location
           description: 'Location of the job posting'
         - name: job_work_from_home
@@ -19,6 +21,9 @@ models:
       columns:
         - name: month
           description: 'Month of the job postings'
+          data_tests:
+            - not_null
+            - unique
         - name: role
           description: 'Role or search term for the job postings'
         - name: postings
@@ -35,8 +40,13 @@ models:
       columns:
         - name: month
           description: 'Month of the job postings'
+          data_tests:
+            - not_null
+            - unique
         - name: total_job_posts
           description: 'Total count of job postings for the given month'
+          data_tests:
+            - not_null
         - name: remote_job_posts
           description: 'Count of remote job postings for the given month'
         - name: remote_job_posts_pct
