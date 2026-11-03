@@ -14,3 +14,30 @@ models:
           description: 'Date when the job was searched'
         - name: search_term
           description: 'Search term used to find the job posting'
+    - name: jobs_per_month
+      description: 'Aggregated job postings per month and role'
+      columns:
+        - name: month
+          description: 'Month of the job postings'
+        - name: role
+          description: 'Role or search term for the job postings'
+        - name: postings
+          description: 'Count of job postings for the given month and role'
+    - name: top_locations
+      description: 'Top locations with the highest number of job postings'
+      columns:
+        - name: location
+          description: 'Location of the job postings'
+        - name: postings
+          description: 'Count of job postings for the given location'
+    - name: monthly_job_postings
+      description: 'Monthly total job postings, remote job postings, and pct of remote job postings'
+      columns:
+        - name: month
+          description: 'Month of the job postings'
+        - name: total_job_posts
+          description: 'Total count of job postings for the given month'
+        - name: remote_job_posts
+          description: 'Count of remote job postings for the given month'
+        - name: remote_job_posts_pct
+          description: 'Percentage of remote job postings for the given month'
