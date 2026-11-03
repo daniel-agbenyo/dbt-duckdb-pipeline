@@ -1,0 +1,16 @@
+models:
+    - name: job_postings
+      description: 'One row per job posting'
+      columns:
+        - name: job_id
+          description: 'Unique identifier for the job posting'
+        - name: job_title
+          description: 'Title of the job posting'
+        - name: job_location
+          description: 'Location of the job posting'
+        - name: job_work_from_home
+          description: 'Indicates if the job is work from home'
+        - name: search_date
+          description: 'Date when the job was searched'
+        - name: search_term
+          description: 'Search term used to find the job posting'
