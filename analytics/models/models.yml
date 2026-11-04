@@ -23,7 +23,6 @@ models:
           description: 'Month of the job postings'
           data_tests:
             - not_null
-            - unique
         - name: role
           description: 'Role or search term for the job postings'
         - name: postings

@@ -1,0 +1,11 @@
+analytics:
+  target: prod
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/dev.duckdb
+      threads: 1
+    prod:
+      type: duckdb
+      path: ../data/prod.duckdb
+      threads: 4
