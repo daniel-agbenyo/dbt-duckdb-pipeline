@@ -34,7 +34,7 @@ models:
           description: 'Location of the job postings'
         - name: postings
           description: 'Count of job postings for the given location'
-    - name: monthly_job_postings
+    - name: monthly_summary
       description: 'Monthly total job postings, remote job postings, and pct of remote job postings'
       columns:
         - name: month
