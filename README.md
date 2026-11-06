@@ -1,5 +1,5 @@
 # 🦆 dbt + DuckDB Job Market Pipeline
-
+![dbt DAG](img/dbt-dag.png)
 This repo is my build of Project #1 from Luke Barousse's free course, [dbt for Data Analytics & Engineering](https://github.com/lukebarousse/dbt_Analytics_Engineering_Course). It takes a year of raw job postings and turns them into tested, documented tables on DuckDB. GitHub Actions rebuilds the warehouse automatically and publishes it.
 
 ## Author 👤
