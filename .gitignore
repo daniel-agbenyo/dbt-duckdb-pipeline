@@ -17,3 +17,6 @@ logs/
 
 #dbt files
 .user.yml
+
+#miscellaneous
+.DS_Store
